@@ -1,5 +1,17 @@
 # LLM with MCP
 
+## Prepare
+
+`touch .env`
+
+update .env
+
+```env
+BASE_URL="your chat model"
+API_KEY="your api key"
+MODEL="your model name"
+```
+
 ## Install Python
 
 `pip install -r requirements.txt`
