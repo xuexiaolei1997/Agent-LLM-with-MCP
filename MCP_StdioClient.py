@@ -12,6 +12,7 @@ import logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
+
 class MCPClient:
     def __init__(self):
         """初始化 MCP 客户端"""
