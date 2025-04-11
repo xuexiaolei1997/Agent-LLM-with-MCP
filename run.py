@@ -15,6 +15,7 @@ base_url = os.getenv("BASE_URL")
 api_key = os.getenv("API_KEY")
 llm_model_name = os.getenv("MODEL")
 
+
 async def run_agent(llm, mcp_client, query):
     messages = []
     messages.append({"role": "user", "content": query})
