@@ -7,9 +7,9 @@
 update .env
 
 ```env
-BASE_URL="your chat model"
-API_KEY="your api key"
-MODEL="your model name"
+BASE_URL="Your chat model"
+API_KEY="Your api key"
+MODEL="Your model name"
 ```
 
 ## Install Python
@@ -26,19 +26,19 @@ MODEL="your model name"
 
 `npx tsc --init`
 
-### update packages.json
+### Update packages.json
 
 ```json
 {
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "start": "node build/client.js"
+    // "start": "node build/client.js"
   }
 }
 ```
 
-### update tsconfig.json
+### Update tsconfig.json
 
 ```json
 {
@@ -47,7 +47,7 @@ MODEL="your model name"
     "module": "Node16",
     "moduleResolution": "Node16",
     "outDir": "./build",
-    "rootDir": "./src",
+    // "rootDir": "./src",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -56,3 +56,11 @@ MODEL="your model name"
   "include": ["src/**/*"]
 }
 ```
+
+## Run
+
+### Config MCP Server in run.py
+
+Edit run.py and change variable `servers_list` what you want to use.
+
+`python run.py`

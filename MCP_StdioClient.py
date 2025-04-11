@@ -46,7 +46,7 @@ class MCPClient:
 
         logger.info("\n所有可用工具信息：")
         for tool in self.all_tools:
-            logger.info(f" - {tool["function"]['name']}: {tool["function"]['description']}")
+            logger.info(f" - {tool['function']['name']}: {tool['function']['description']}")
 
     async def connect_to_server(self, server_script_path: str):
         """连接到 MCP 服务器"""
