@@ -4,7 +4,7 @@
 
 `touch .env`
 
-update .env
+Update .env to use LLM
 
 ```env
 BASE_URL="Your chat model"
@@ -12,11 +12,17 @@ API_KEY="Your api key"
 MODEL="Your model name"
 ```
 
-## Install Python
+## Python Environment
+
+Install python>=3.10 and install packages using command below:
 
 `pip install -r requirements.txt`
 
-## Init node
+## Node Environment
+
+Install Node.js>=20 and using command `node -v`, `npm -v` to make sure installed nodejs correctly.
+
+`cd /{workdir}`
 
 `npm init -y`
 
