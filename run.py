@@ -74,8 +74,7 @@ async def main(servers_list):
         await run_agent(llm, mcp_client, user_input)
     
     await mcp_client.cleanup()
-        
-        
+
 
 if __name__ == "__main__":
     

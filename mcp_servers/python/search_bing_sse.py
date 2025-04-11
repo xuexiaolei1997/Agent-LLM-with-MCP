@@ -1,18 +1,6 @@
 from mcp.server.fastmcp import FastMCP
-import httpx
-import json
-import os
-from bs4 import BeautifulSoup
-from typing import Any
-import httpx
 import requests
 from mcp.server.fastmcp import FastMCP
-from starlette.applications import Starlette
-from mcp.server.sse import SseServerTransport
-from starlette.requests import Request
-from starlette.routing import Mount, Route
-from mcp.server import Server
-import uvicorn
 
 USER_AGENT = "SearchBing-SSE"
 
