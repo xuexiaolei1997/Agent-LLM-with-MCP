@@ -18,6 +18,7 @@ log_level = os.getenv("LOG_LEVEL", "INFO").upper()
 if log_level not in ["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"]:
     raise ValueError(f"Invalid log level: {log_level}. Must be one of DEBUG, INFO, WARNING, ERROR, CRITICAL.")
 
+
 def setup_logger():
     """
     Sets up the logger for the application.
