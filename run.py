@@ -5,7 +5,7 @@ import asyncio
 from dotenv import load_dotenv, find_dotenv
 from openai import OpenAI
 
-from MCP_StdioClient import MCPClient
+from MCP_StdioClient_2 import MCPClient
 from common.logger import logger
 
 # 加载 .env 文件，确保 API Key 受到保护
