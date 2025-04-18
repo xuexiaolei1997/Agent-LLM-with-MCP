@@ -80,7 +80,8 @@ class MCPClient:
             return None
         logger.info(f"正在调用工具 {tool_full_name}，参数: {tool_args}")
         try:
-            resp = await session.call_tool(tool_name, tool_args)
+            async with session:
+                resp = await session.call_tool(tool_name, tool_args)
             return resp
         except Exception as e:
             logger.error(f"⚠️ 调用工具 {tool_full_name} 失败: {e}")
